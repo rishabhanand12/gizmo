@@ -26,9 +26,11 @@ export default class App extends React.Component {
 
   render() {
     return (
-        <React.Suspense className="container" fallback = {<div>Loading...</div>}>
-          <Headernav className="headerNav container" sources = {this.state.sources} />
-        </React.Suspense>
+        <React.Suspense className="" fallback = {<div>Loading...</div>}>
+        <div className="headerNav container">
+          <Headernav  sources = {this.state.sources} />
+        </div>
+       </React.Suspense>
     )
   }
 
